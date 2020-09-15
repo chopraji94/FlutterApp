@@ -14,9 +14,29 @@ class AppHome extends StatelessWidget {
         backgroundColor: Colors.red[600],
       ),
       body: Center(
-        child: Image(
-          image: AssetImage('Assets/Space1.jpg'),
-          fit: BoxFit.fitWidth,
+        // child: Icon(
+        //   Icons.airport_shuttle,
+        //   color: Colors.lightBlue,
+        //   size: 50,
+        // ),
+        // child: RaisedButton(
+        //   onPressed: () {
+        //     print('You clicked Me');
+        //   },
+        //   child: Text(
+        //     'Click Me',
+        //   ),
+        //   color: Colors.lightBlue,
+        // ),
+        child: RaisedButton.icon(
+            onPressed: () {
+              print('You clicked me');
+            },
+            icon: Icon(
+              Icons.airport_shuttle
+            ),
+            color: Colors.yellowAccent,
+            label: Text('Click Me')
         ),
       ),
       floatingActionButton: FloatingActionButton(
