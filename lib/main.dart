@@ -13,16 +13,22 @@ class AppHome extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Padding(
-        padding: EdgeInsets.all(30.0),
-        child: Text('Hello All'),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: <Widget>[
+          Text('Hello World'),
+          FlatButton (
+            onPressed: () {},
+            color: Colors.redAccent,
+            child: Text('Click Me'),
+          ),
+          Container (
+            color: Colors.cyan,
+            padding: EdgeInsets.all(30.0),
+            child: Text('Hello Buddy'),
+          ),
+        ],
       ),
-      // Container(
-      //   padding: EdgeInsets.all(20),
-      //   margin: EdgeInsets.all(30.0),
-      //   color: Colors.grey[400],
-      //   child: Text('Hello'),
-      // ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Text('Click'),
