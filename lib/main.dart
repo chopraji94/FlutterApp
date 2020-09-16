@@ -14,30 +14,46 @@ class AppHome extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
+      body: Row(
         children: <Widget>[
-          Row (
-            children: <Widget>[
-              Text('Hello'),
-              Text('World'),
-            ],
+          Expanded(
+              child: Image.asset('Assets/Space1.jpg')
           ),
-          Container(
-            padding: EdgeInsets.all(20.0),
-            color: Colors.cyan,
-            child: Text('one'),
+          Expanded(
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.cyan,
+              child: Text(
+                  '1',
+                style: TextStyle(
+                  fontFamily: 'Flower',
+                ),
+              ),
+            ),
           ),
-          Container(
-            padding: EdgeInsets.all(30.0),
-            color: Colors.pink,
-            child: Text('Two'),
+          Expanded(
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.greenAccent,
+              child: Text(
+                  '2',
+                style: TextStyle(
+                  fontFamily: 'Flower',
+                ),
+              ),
+            ),
           ),
-          Container(
-            padding: EdgeInsets.all(40.0),
-            color: Colors.amber,
-            child: Text('Three'),
+          Expanded(
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.amberAccent,
+              child: Text(
+                  '3',
+                style: TextStyle(
+                  fontFamily: 'Flower',
+                ),
+              ),
+            ),
           ),
         ],
       ),
